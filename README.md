@@ -9,13 +9,50 @@ To Do App presenta las siguientes funcionalidades:
 - **Formulario de registro:** Los usuarios pueden crear cuentas personalizadas para gestionar sus tareas de manera segura y privada. El proceso de registro es sencillo e intuitivo.
 - **Inicio de Sesión:** Accede a tu cuenta de manera rápida y segura. La autenticación de usuarios garantiza que solo tú puedas ver y gestionar tus tareas.
 - **Gestión de Tareas:** Añade, edita y elimina tareas con facilidad. Organiza tus tareas por prioridad y fecha de vencimiento para mantenerte al día con tus responsabilidades.
-- **Confirmación de eliminación:** Formulario para validar tareas eliminadas.
-
 ---
 
 ## Estructura del Proyecto
 
-### Paso a paso del proyecto
+todoproject/
+│
+├── tasks/
+│   ├── migrations/
+│   │   └── __init__.py
+│   ├── static/
+│   │   └── css/
+│   │       └── styles.css
+│   ├── templates/
+│   │   └── tasks/
+│   │       ├── task_list.html
+│   │       ├── task_detail.html
+│   │       ├── task_form.html
+│   │       ├── landing_page.html
+│   │       └── register.html
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+│
+├── todoproject/
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+│
+├── db.sqlite3
+├── manage.py
+└── README.md
+
+
+### Requisitos
+
+- Python 3.8+
+- Django 3.2+
 
 #### Step 1: Configuraciones del entorno de desarrollo
 
