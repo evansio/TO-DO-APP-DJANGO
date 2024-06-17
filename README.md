@@ -23,94 +23,93 @@ To Do App presenta las siguientes funcionalidades:
 - Python 3.8+
 - Django 3.2+
 
-#### Step 1: Configuraciones del entorno de desarrollo
+### Paso 1: Clonar el repositorio
 
-1. Crear carpeta del proyecto en local `PI-Django-ToDoList`. Todo trabajo a partir de este punto se realiza en el directorio del proyecto.
-2. Inicialización del repositorio local y vinculación con repositorio remoto en GitHub:
-    ```sh
-    git init
-    git add .
-    git commit -m 'Repository initialization'
-    git branch -M main
-    git remote add origin <url_repository_github>
-    git push -u origin main
-    ```
-3. Creación y activación de ambiente virtual de trabajo:
-    ```sh
-    pip install virtualenv
-    python -m venv venv
-    .\venv\Scripts\activate    
-    ```
-4. Instalación del framework Django:
-    ```sh
-    pip install django
-    ```
-5. Creación del archivo de dependencias `requirements.txt`:
-    ```sh
-    pip freeze > requirements.txt
-    ```
-6. Creación del archivo `.gitignore` y adición de archivos y directorios ignorados: directorio `venv`, archivo `.gitignore`.
-7. Creación del proyecto Django `todo_list`:
-    ```sh
-    django-admin startproject todo_list
-    ```
-8. Creación de nueva aplicación dentro del proyecto:
-    ```sh
-    cd base  # Cambia al sub-directorio para trabajos de desarrollo
-    python manage.py startapp base
-    ```
+```bash
+git clone https://github.com/tu_usuario/todoproject.git
+cd todoproject
+Paso 2: Crear y activar un entorno virtual
+bash
+Copiar código
+python -m venv env
+source env/bin/activate  # En Windows usa `env\Scripts\activate`
+Paso 3: Instalar las dependencias
+bash
+Copiar código
+pip install -r requirements.txt
+Paso 4: Realizar las migraciones de la base de datos
+bash
+Copiar código
+python manage.py migrate
+Paso 5: Crear un superusuario
+bash
+Copiar código
+python manage.py createsuperuser
+Paso 6: Ejecutar el servidor de desarrollo
+bash
+Copiar código
+python manage.py runserver
+Ahora puedes acceder al proyecto en http://127.0.0.1:8000.
 
-#### Step 2: Diseño del modelo de datos
+Descripción de la Estructura del Proyecto
+Directorios y Archivos Principales
+todoproject/: Contiene la configuración principal del proyecto.
+settings.py: Configuraciones del proyecto Django.
+urls.py: Configuración de las URL principales.
+tasks/: Aplicación de gestión de tareas.
+models.py: Define el modelo Task.
+views.py: Contiene las vistas para listar, crear, editar y eliminar tareas.
+urls.py: Configuración de las URL específicas de la aplicación de tareas.
+forms.py: Define el formulario TaskForm.
+templates/tasks/: Contiene las plantillas HTML para las vistas.
+Decisiones de Diseño Importantes
+Estructura del Modelo:
 
-1. Configuración de la aplicación creada en el archivo `todo_list\settings.py`:
-    ```python
-    INSTALLED_APPS = [
-        ...,
-        'base.apps.BaseConfig', 
-    ]
-    ```
-2. Crear archivo `urls.py` en `base\urls.py` y definir las URLs para cada vista creada en `base\views.py`.
+El modelo Task incluye campos para el título, descripción, fecha de creación, estado (pendiente o completado) y el usuario propietario de la tarea.
+Autenticación y Autorización:
 
-#### Step 3: Implementación de funcionalidades
+Se utiliza el sistema de autenticación de Django para gestionar el acceso de los usuarios. Las vistas están protegidas con @login_required para asegurarse de que solo los usuarios autenticados puedan acceder a ellas.
+Interfaz de Usuario:
 
-1. Crear vistas en `base\views.py` para realizar las operaciones CRUD (crear, leer, actualizar, eliminar tareas).
-2. Definir las funciones de vista para cada operación CRUD:
-    - Inicio de sesión
-    - Registro
-    - Lista de tareas
-    - Detalle de tareas
-    - Crear tarea
-    - Actualización de tarea
-    - Eliminar tarea
+Se han utilizado iconos de Font Awesome para mejorar la interfaz de usuario, sustituyendo botones de texto por iconos intuitivos.
+Estilos y Diseño:
 
-#### Step 4: Diseño de la Interfaz de Usuario
+Se ha añadido una hoja de estilos CSS personalizada para mejorar la apariencia visual de la aplicación.
+Funcionalidad de Tareas:
 
-1. Utilizar Django Templates para diseñar las plantillas HTML en la carpeta `templates\base`.
-2. Estilizar la interfaz y hacerla responsiva en la ruta `static\base\styles.css`.
+Los usuarios pueden crear, editar, eliminar y marcar tareas como completadas o pendientes.
+Las tareas completadas se muestran con una opacidad reducida para diferenciarlas visualmente.
+Contacto
+Para cualquier duda o sugerencia, puedes contactar a [tu correo electrónico].
 
-#### Step 5: Configuración de Django Admin
+shell
+Copiar código
 
-1. Registrar el modelo `Task` en `base\admin.py` para poder administrarlo desde Django Admin:
-    ```python
-    from django.contrib import admin
-    from .models import Task
+### 4. Requisitos del Proyecto
 
-    admin.site.register(Task)
-    ```
-2. Crear superusuario en Django:
-    ```sh
-    python manage.py createsuperuser
-    ```
+Crea un archivo `requirements.txt` con las dependencias necesarias:
 
-#### Step 6: Ejecución y Pruebas
+#### requirements.txt
 
-1. Ejecutar el servidor de desarrollo de Django:
-    ```sh
-    python manage.py runserver
-    ```
-2. Acceder a la aplicación desde tu navegador y realizar pruebas para asegurarte de que todas las funcionalidades funcionen correctamente.
+Django==3.2.14
 
----
+shell
+Copiar código
+
+### 5. Asegúrate de que todo funciona correctamente
+
+Antes de subir el proyecto, asegúrate de que todo funciona correctamente ejecutando el servidor y probando las funcionalidades principales.
+
+### 6. Subir el Proyecto a un Repositorio
+
+Sube todo el proyecto a un repositorio en GitHub o cualquier otra plataforma de control de versiones que prefieras.
+
+### 7. Instrucciones para el Usuario
+
+En el archivo `README.md` ya se han incluido las instrucciones para configurar y ejecutar el proyecto. Asegúrate de que sean claras y fáciles de seguir.
+
+Con estos pasos, tendrás un paquete completo de tu proyecto con la documentación adecuada para configurar, ejecutar y entender la estructura y las decisiones de diseño.
+Me esta arrojando el siguiente error:
 
 ## Mejoras y Adiciones Futuras
 
