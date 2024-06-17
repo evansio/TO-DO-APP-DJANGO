@@ -20,9 +20,10 @@ To Do App presenta las siguientes funcionalidades:
 
 ### Requisitos
 
-- Python 3.8+
-- Django 3.2+
-
+asgiref==3.8.1
+Django==5.0.6
+sqlparse==0.5.0
+tzdata==2024.1
 
 ## Instrucciones para Configurar y Ejecutar el Proyecto en Visual Studio Code
 
@@ -54,16 +55,11 @@ pip install django
 ```bash
 pip freeze > requirements.txt
 ```
-### Paso 5: Realizar las migraciones de la base de datos
-```bash
-python manage.py makemigrations
-python manage.py migrate
-```
-### Paso 6: Crear un superusuario
+### Paso 5: Crear un superusuario
 ```bash
 python manage.py createsuperuser
 ```
-### Paso 7: Ejecutar el servidor de desarrollo
+### Paso 6: Ejecutar el servidor de desarrollo
 ```bash
 python manage.py runserver
 ```
