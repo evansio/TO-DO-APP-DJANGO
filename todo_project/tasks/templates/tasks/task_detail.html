@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalle de Tarea</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>{{ task.title }}</h1>
+            <p>{{ task.description }}</p>
+            <p>Estado: {{ task.get_status_display }}</p>
+            <p>Creado en: {{ task.created_at }}</p>
+            <div class="task-actions">
+                <a href="{% url 'task_edit' task.pk %}"><button>Editar</button></a>
+                <a href="{% url 'task_delete' task.pk %}"><button>Eliminar</button></a>
+            </div>
+            <p><a href="{% url 'task_list' %}">Volver a la lista</a></p>
+        </div>
+    </div>
+</body>
+</html>
+

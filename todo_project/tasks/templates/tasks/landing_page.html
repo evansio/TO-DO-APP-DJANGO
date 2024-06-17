@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio de Sesión</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Bienvenido a la App de Tareas</h1>
+        </header>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </section>
+</body>
+</html>
