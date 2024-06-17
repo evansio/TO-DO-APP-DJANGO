@@ -15,13 +15,17 @@ To Do App presenta las siguientes funcionalidades:
 
 todoproject/
 │
+├── static/
+│   ├── css/
+│       └── styles.css
 ├── tasks/
 │   ├── migrations/
 │   │   └── __init__.py
-│   ├── static/
-│   │   └── css/
-│   │       └── styles.css
 │   ├── templates/
+│   │   └── registration/
+│   │       ├── logged_out.html
+│   │       ├── login.html
+│   │       ├── register.html
 │   │   └── tasks/
 │   │       ├── task_list.html
 │   │       ├── task_detail.html
