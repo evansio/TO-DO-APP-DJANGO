@@ -41,26 +41,25 @@ cd todoproject
 En la terminal integrada de VSCode, crea un entorno virtual:
 
 ```bash
-Copiar código
 python -m venv env
 ```
 
-Paso 3: Instalar las dependencias
-bash
-Copiar código
+### Paso 3: Instalar las dependencias
+```bash
 pip install -r requirements.txt
-Paso 4: Realizar las migraciones de la base de datos
-bash
-Copiar código
+```
+### Paso 4: Realizar las migraciones de la base de datos
+```bash
 python manage.py migrate
-Paso 5: Crear un superusuario
+```
+### Paso 5: Crear un superusuario
 bash
-Copiar código
 python manage.py createsuperuser
-Paso 6: Ejecutar el servidor de desarrollo
-bash
-Copiar código
+```
+### Paso 6: Ejecutar el servidor de desarrollo
+```bash
 python manage.py runserver
+```
 Ahora puedes acceder al proyecto en http://127.0.0.1:8000.
 
 Descripción de la Estructura del Proyecto
