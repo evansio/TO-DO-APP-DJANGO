@@ -41,22 +41,29 @@ cd todoproject
 En la terminal integrada de VSCode, crea un entorno virtual:
 
 ```bash
-python -m venv env
+ pip install virtualenv
+ python -m venv venv
+ .\venv\Scripts\activate
+```
+### Paso 3: Instalar Django
+```bash
+pip install django
 ```
 
-### Paso 3: Instalar las dependencias
+### Paso 4: Instalar las dependencias
 ```bash
-pip install -r requirements.txt
+pip freeze > requirements.txt
 ```
-### Paso 4: Realizar las migraciones de la base de datos
+### Paso 5: Realizar las migraciones de la base de datos
 ```bash
+python manage.py makemigrations
 python manage.py migrate
 ```
-### Paso 5: Crear un superusuario
+### Paso 6: Crear un superusuario
 ```bash
 python manage.py createsuperuser
 ```
-### Paso 6: Ejecutar el servidor de desarrollo
+### Paso 7: Ejecutar el servidor de desarrollo
 ```bash
 python manage.py runserver
 ```
