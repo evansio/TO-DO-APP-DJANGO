@@ -66,13 +66,13 @@ Ahora puedes acceder al proyecto en http://127.0.0.1:8000.
 ### Directorios y Archivos Principales
 #### todoproject/: Contiene la configuración principal del proyecto.
 #### settings.py: Configuraciones del proyecto Django.
-### urls.py: Configuración de las URL principales.
-### tasks/: Aplicación de gestión de tareas.
-### models.py: Define el modelo Task.
-### views.py: Contiene las vistas para listar, crear, editar y eliminar tareas.
-### urls.py: Configuración de las URL específicas de la aplicación de tareas.
-### forms.py: Define el formulario TaskForm.
-### templates/tasks/: Contiene las plantillas HTML para las vistas.
+#### urls.py: Configuración de las URL principales.
+#### tasks/: Aplicación de gestión de tareas.
+#### models.py: Define el modelo Task.
+#### views.py: Contiene las vistas para listar, crear, editar y eliminar tareas.
+#### urls.py: Configuración de las URL específicas de la aplicación de tareas.
+#### forms.py: Define el formulario TaskForm.
+#### templates/tasks/: Contiene las plantillas HTML para las vistas.
 
 ## Decisiones de Diseño Importantes
 
