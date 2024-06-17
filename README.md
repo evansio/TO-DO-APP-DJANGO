@@ -18,12 +18,12 @@ To Do App presenta las siguientes funcionalidades:
 <img width="172" alt="Estructura del Proyecto" src="https://github.com/evansio/TO-DO-APP-DJANGO/assets/99567473/2f978c4f-9ef6-4961-87cf-7939da1ab3bb">
 
 
-### Requisitos
+## Requisitos
 
-asgiref==3.8.1
-Django==5.0.6
-sqlparse==0.5.0
-tzdata==2024.1
+- asgiref==3.8.1
+- Django==5.0.6
+- sqlparse==0.5.0
+- tzdata==2024.1
 
 ## Instrucciones para Configurar y Ejecutar el Proyecto en Visual Studio Code
 
@@ -39,18 +39,6 @@ cd todoproject
 ```
 ### Paso 2: Crear archivo README.md
 Asegúrate de que tu README.md contenga instrucciones claras para la configuración y ejecución del proyecto.
-
-Acá un pequeño ejemplo:
-
-# Proyecto de Lista de Tareas
-
-Este es un proyecto de lista de tareas desarrollado con Django. Permite a los usuarios gestionar sus tareas, marcarlas como completadas, editarlas y eliminarlas.
-
-## Requisitos
-
-- Python 3.8+
-- Django 3.2+
-- Visual Studio Code (VSCode)
 
 ## Instrucciones para Configurar y Ejecutar el Proyecto en Visual Studio Code
 
