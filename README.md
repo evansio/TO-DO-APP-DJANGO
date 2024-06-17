@@ -106,4 +106,4 @@ Se ha añadido una hoja de estilos CSS personalizada para mejorar la apariencia 
 ---
 
 ## Contacto
-Para cualquier consulta o sugerencia, por favor contacta a [Tu Nombre] a través de [tu.email@example.com].
+Para cualquier consulta o sugerencia, por favor contacta a Edgar Ortega a través de [edgarortega1991@gmail.com].
