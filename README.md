@@ -53,7 +53,7 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 ### Paso 5: Crear un superusuario
-bash
+```bash
 python manage.py createsuperuser
 ```
 ### Paso 6: Ejecutar el servidor de desarrollo
@@ -62,10 +62,10 @@ python manage.py runserver
 ```
 Ahora puedes acceder al proyecto en http://127.0.0.1:8000.
 
-Descripción de la Estructura del Proyecto
-Directorios y Archivos Principales
-todoproject/: Contiene la configuración principal del proyecto.
-settings.py: Configuraciones del proyecto Django.
+## Descripción de la Estructura del Proyecto
+### Directorios y Archivos Principales
+#### todoproject/: Contiene la configuración principal del proyecto.
+#### settings.py: Configuraciones del proyecto Django.
 urls.py: Configuración de las URL principales.
 tasks/: Aplicación de gestión de tareas.
 models.py: Define el modelo Task.
