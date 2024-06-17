@@ -25,14 +25,24 @@ To Do App presenta las siguientes funcionalidades:
 
 ### Paso 1: Clonar el repositorio
 
+## Instrucciones para Configurar y Ejecutar el Proyecto en Visual Studio Code
+
+### Paso 1: Clonar el Repositorio
+
+1. Abre Visual Studio Code.
+2. Abre una terminal integrada en VSCode (Ctrl + `).
+3. Clona el repositorio desde GitHub:
+
 ```bash
 git clone https://github.com/tu_usuario/todoproject.git
 cd todoproject
-Paso 2: Crear y activar un entorno virtual
+
+Paso 2: Crear y Activar un Entorno Virtual
+En la terminal integrada de VSCode, crea un entorno virtual:
 bash
 Copiar código
 python -m venv env
-source env/bin/activate  # En Windows usa `env\Scripts\activate`
+
 Paso 3: Instalar las dependencias
 bash
 Copiar código
