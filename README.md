@@ -37,8 +37,35 @@ tzdata==2024.1
 git clone https://github.com/tu_usuario/todoproject.git
 cd todoproject
 ```
+### Paso 2: Crear archivo README.md
+Asegúrate de que tu README.md contenga instrucciones claras para la configuración y ejecución del proyecto.
 
-### Paso 2: Crear y Activar un Entorno Virtual
+Acá un pequeño ejemplo:
+
+# Proyecto de Lista de Tareas
+
+Este es un proyecto de lista de tareas desarrollado con Django. Permite a los usuarios gestionar sus tareas, marcarlas como completadas, editarlas y eliminarlas.
+
+## Requisitos
+
+- Python 3.8+
+- Django 3.2+
+- Visual Studio Code (VSCode)
+
+## Instrucciones para Configurar y Ejecutar el Proyecto en Visual Studio Code
+
+### Paso 1: Clonar el Repositorio
+
+1. Abre Visual Studio Code.
+2. Abre una terminal integrada en VSCode (Ctrl + `).
+3. Clona el repositorio desde GitHub:
+
+```bash
+git clone https://github.com/tu_usuario/todoproject.git
+cd todoproject
+```
+
+### Paso 3: Crear y Activar un Entorno Virtual
 En la terminal integrada de VSCode, crea un entorno virtual:
 
 ```bash
@@ -46,20 +73,20 @@ En la terminal integrada de VSCode, crea un entorno virtual:
  python -m venv venv
  .\venv\Scripts\activate
 ```
-### Paso 3: Instalar Django
+### Paso 4: Instalar Django
 ```bash
 pip install django
 ```
 
-### Paso 4: Instalar las dependencias
+### Paso 5: Instalar las dependencias
 ```bash
 pip freeze > requirements.txt
 ```
-### Paso 5: Crear un superusuario
+### Paso 6: Crear un superusuario
 ```bash
 python manage.py createsuperuser
 ```
-### Paso 6: Ejecutar el servidor de desarrollo
+### Paso 7: Ejecutar el servidor de desarrollo
 ```bash
 python manage.py runserver
 ```
