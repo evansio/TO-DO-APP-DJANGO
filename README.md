@@ -66,61 +66,36 @@ Ahora puedes acceder al proyecto en http://127.0.0.1:8000.
 ### Directorios y Archivos Principales
 #### todoproject/: Contiene la configuración principal del proyecto.
 #### settings.py: Configuraciones del proyecto Django.
-urls.py: Configuración de las URL principales.
-tasks/: Aplicación de gestión de tareas.
-models.py: Define el modelo Task.
-views.py: Contiene las vistas para listar, crear, editar y eliminar tareas.
-urls.py: Configuración de las URL específicas de la aplicación de tareas.
-forms.py: Define el formulario TaskForm.
-templates/tasks/: Contiene las plantillas HTML para las vistas.
-Decisiones de Diseño Importantes
-Estructura del Modelo:
+### urls.py: Configuración de las URL principales.
+### tasks/: Aplicación de gestión de tareas.
+### models.py: Define el modelo Task.
+### views.py: Contiene las vistas para listar, crear, editar y eliminar tareas.
+### urls.py: Configuración de las URL específicas de la aplicación de tareas.
+### forms.py: Define el formulario TaskForm.
+### templates/tasks/: Contiene las plantillas HTML para las vistas.
+
+## Decisiones de Diseño Importantes
+
+### Estructura del Modelo:
 
 El modelo Task incluye campos para el título, descripción, fecha de creación, estado (pendiente o completado) y el usuario propietario de la tarea.
-Autenticación y Autorización:
+
+### Autenticación y Autorización:
 
 Se utiliza el sistema de autenticación de Django para gestionar el acceso de los usuarios. Las vistas están protegidas con @login_required para asegurarse de que solo los usuarios autenticados puedan acceder a ellas.
-Interfaz de Usuario:
+
+### Interfaz de Usuario:
 
 Se han utilizado iconos de Font Awesome para mejorar la interfaz de usuario, sustituyendo botones de texto por iconos intuitivos.
-Estilos y Diseño:
+
+### Estilos y Diseño:
 
 Se ha añadido una hoja de estilos CSS personalizada para mejorar la apariencia visual de la aplicación.
-Funcionalidad de Tareas:
 
-Los usuarios pueden crear, editar, eliminar y marcar tareas como completadas o pendientes.
-Las tareas completadas se muestran con una opacidad reducida para diferenciarlas visualmente.
-Contacto
-Para cualquier duda o sugerencia, puedes contactar a [tu correo electrónico].
+### Funcionalidad de Tareas:
 
-shell
-Copiar código
-
-### 4. Requisitos del Proyecto
-
-Crea un archivo `requirements.txt` con las dependencias necesarias:
-
-#### requirements.txt
-
-Django==3.2.14
-
-shell
-Copiar código
-
-### 5. Asegúrate de que todo funciona correctamente
-
-Antes de subir el proyecto, asegúrate de que todo funciona correctamente ejecutando el servidor y probando las funcionalidades principales.
-
-### 6. Subir el Proyecto a un Repositorio
-
-Sube todo el proyecto a un repositorio en GitHub o cualquier otra plataforma de control de versiones que prefieras.
-
-### 7. Instrucciones para el Usuario
-
-En el archivo `README.md` ya se han incluido las instrucciones para configurar y ejecutar el proyecto. Asegúrate de que sean claras y fáciles de seguir.
-
-Con estos pasos, tendrás un paquete completo de tu proyecto con la documentación adecuada para configurar, ejecutar y entender la estructura y las decisiones de diseño.
-Me esta arrojando el siguiente error:
+- Los usuarios pueden crear, editar, eliminar y marcar tareas como completadas o pendientes.
+- Las tareas completadas se muestran con una opacidad reducida para diferenciarlas visualmente.
 
 ## Mejoras y Adiciones Futuras
 
