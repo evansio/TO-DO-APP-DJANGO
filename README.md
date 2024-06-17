@@ -12,6 +12,7 @@ To Do App presenta las siguientes funcionalidades:
 ---
 
 ## Estructura del Proyecto
+<img width="172" alt="Estructura del Proyecto" src="https://github.com/evansio/TO-DO-APP-DJANGO/assets/99567473/2f978c4f-9ef6-4961-87cf-7939da1ab3bb">
 
 todoproject/
 │
