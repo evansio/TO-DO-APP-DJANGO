@@ -23,7 +23,6 @@ To Do App presenta las siguientes funcionalidades:
 - Python 3.8+
 - Django 3.2+
 
-### Paso 1: Clonar el repositorio
 
 ## Instrucciones para Configurar y Ejecutar el Proyecto en Visual Studio Code
 
@@ -36,12 +35,15 @@ To Do App presenta las siguientes funcionalidades:
 ```bash
 git clone https://github.com/tu_usuario/todoproject.git
 cd todoproject
+```
 
-Paso 2: Crear y Activar un Entorno Virtual
+### Paso 2: Crear y Activar un Entorno Virtual
 En la terminal integrada de VSCode, crea un entorno virtual:
-bash
+
+```bash
 Copiar código
 python -m venv env
+```
 
 Paso 3: Instalar las dependencias
 bash
