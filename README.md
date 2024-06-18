@@ -34,8 +34,8 @@ To Do App presenta las siguientes funcionalidades:
 3. Clona el repositorio desde GitHub:
 
 ```bash
-git clone https://github.com/tu_usuario/todoproject.git
-cd todoproject
+git clone https://github.com/evansio/TO-DO-APP-DJANGO.git
+cd TO-DO-APP-DJANGO
 ```
 ### Paso 2: Crear archivo README.md
 Asegúrate de que tu README.md contenga instrucciones claras para la configuración y ejecución del proyecto.
