@@ -40,19 +40,6 @@ cd todoproject
 ### Paso 2: Crear archivo README.md
 Asegúrate de que tu README.md contenga instrucciones claras para la configuración y ejecución del proyecto.
 
-## Instrucciones para Configurar y Ejecutar el Proyecto en Visual Studio Code
-
-### Paso 1: Clonar el Repositorio
-
-1. Abre Visual Studio Code.
-2. Abre una terminal integrada en VSCode (Ctrl + `).
-3. Clona el repositorio desde GitHub:
-
-```bash
-git clone https://github.com/tu_usuario/todoproject.git
-cd todoproject
-```
-
 ### Paso 3: Crear y Activar un Entorno Virtual
 En la terminal integrada de VSCode, crea un entorno virtual:
 
