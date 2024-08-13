@@ -11,8 +11,6 @@ To Do App presenta las siguientes funcionalidades:
 - **Gestión de Tareas:** Añade, edita y elimina tareas con facilidad. Organiza tus tareas por prioridad y fecha de vencimiento para mantenerte al día con tus responsabilidades.
 ---
 
-<img width="410" alt="app_todo_project_denisse" src="https://github.com/evansio/TO-DO-APP-DJANGO/assets/99567473/ee0fb870-b4f0-471c-8374-816a49cb544c">
-
 
 ## Estructura del Proyecto
 <img width="172" alt="Estructura del Proyecto" src="https://github.com/evansio/TO-DO-APP-DJANGO/assets/99567473/2f978c4f-9ef6-4961-87cf-7939da1ab3bb">
